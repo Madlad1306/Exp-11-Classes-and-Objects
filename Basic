@@ -1,0 +1,67 @@
+#include <iostream>
+using namespace std;
+
+class student  {
+public:
+    string name;
+    string branch;
+    string subject;
+    string year;
+    float cgpa;
+};
+
+int main() {
+    student s1, s2;  ]
+
+ 
+    s1.name = "Madhav";
+    s1.branch = "EnTC";
+    s1.subject = "C++";
+    s1.year = "2nd";
+    s1.cgpa = 8.4;
+
+  
+    s2.name = "Shruti";
+    s2.branch = "CS";
+    s2.subject = "Python";
+    s2.year = "1st";
+    s2.cgpa = 9.1;
+
+    
+    cout << "Student 1:" << endl;
+    cout << "Name    : " << s1.name << endl;
+    cout << "Branch  : " << s1.branch << endl;
+    cout << "Subject : " << s1.subject << endl;
+    cout << "Year    : " << s1.year << endl;
+    cout << "CGPA    : " << s1.cgpa << endl;
+
+    cout << endl; 
+
+    cout << "Student 2:" << endl;
+    cout << "Name    : " << s2.name << endl;
+    cout << "Branch  : " << s2.branch << endl;
+    cout << "Subject : " << s2.subject << endl;
+    cout << "Year    : " << s2.year << endl;
+    cout << "CGPA    : " << s2.cgpa << endl;
+
+    return 0;
+}
+
+
+EXPECTED OUTPUT :
+
+Student 1:
+Name    : Madhav
+Branch  : EnTC
+Subject : C++
+Year    : 2nd
+CGPA    : 8.4
+
+Student 2:
+Name    : Shruti
+Branch  : CS
+Subject : Python
+Year    : 1st
+CGPA    : 9.1
+
+
