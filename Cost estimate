@@ -1,0 +1,55 @@
+#include <iostream>
+using namespace std;
+
+class area {
+public:
+    float length;
+    float breadth;
+
+    float calculate_area() {
+        return length * breadth;
+    }
+};
+
+int main() {
+    string quality;
+    area a;
+    long double totalCost; 
+
+    cout << "Enter length in sqft :";
+    cin >> a.length;
+    cout << "Enter breadth in sqft :";
+    cin >> a.breadth;
+    cout << "Area: " << a.calculate_area() << endl;
+
+    cout << "Enter Quality of construction (basic, standard, premium) :";
+    cin >> quality;
+
+    if (quality == "basic") {
+        totalCost = a.calculate_area() * 1700;
+        cout << "Total cost: " << totalCost << endl;
+    } 
+    else if (quality == "standard") {
+        totalCost = a.calculate_area() * 2200;
+        cout << "Total cost: " << totalCost << endl;
+    } 
+    else if (quality == "premium") {
+        totalCost = a.calculate_area() * 3000;
+        cout << "Total cost: " << totalCost << endl;
+    } 
+    else {
+        cout << "Invalid quality entered. Please enter basic, standard, or premium." << endl;
+    }
+ 
+    return 0;
+}
+
+
+EXPECTED OUTPUT :
+
+Enter length in sqft :50
+Enter breadth in sqft :40
+Area: 2000
+Enter Quality of construction (basic, standard, premium) :basic
+Area: 2000
+Total cost: 3400000
