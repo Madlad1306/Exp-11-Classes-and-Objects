@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+class MyClass {
+public:
+    int height = 20;
+    int width = 25;
+    int length = 30;
+
+    void Volume() {
+        cout << height * width * length << endl;
+    }
+
+    void myVolume();
+};
+
+void MyClass::myVolume() {
+    cout << height * width * length << endl;
+}
+
+int main() {
+    MyClass M1;
+    M1.Volume();
+    M1.myVolume();
+    return 0;
+}
+
+
+
+
+OUTPUT :
+
+15000
+15000
