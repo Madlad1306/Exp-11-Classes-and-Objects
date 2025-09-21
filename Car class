@@ -1,0 +1,169 @@
+#include <iostream>
+using namespace std;
+
+class Car{
+
+public:
+    string name;
+    string model;
+    string color;
+    float mileage;
+    int year_of_manufacturing;
+    float market_price;
+
+};
+
+int main() {
+
+    Car c1;
+    cout << "Enter car name: ";
+    cin >> c1.name;
+    cout << "Model :";
+    cin >> c1.model;
+    cout << "Enter car color: ";
+    cin >> c1.color;
+    cout << "Enter car mileage: ";
+    cin >> c1.mileage;
+    cout << "Enter year of manufacturing: "; 
+    cin >> c1.year_of_manufacturing;
+    cout << "Enter market price: ";
+    cin >> c1.market_price;      
+    cout << endl;
+
+    cout << "Car Details:" << endl;
+    cout << "Name: " << c1.name << endl;
+    cout << "Model: " << c1.model << endl;
+    cout << "Color: " << c1.color << endl;
+    cout << "Mileage: " << c1.mileage << endl;
+    cout << "Year of Manufacturing: " << c1.year_of_manufacturing << endl;
+    cout << "Market Price: " << c1.market_price << endl;
+
+    Car c2;
+    cout << "Enter car name: ";
+    cin >> c2.name;
+    cout << "Model :";
+    cin >> c2.model;
+    cout << "Enter car color: "; 
+    cin >> c2.color;
+    cout << "Enter car mileage: ";
+    cin >> c2.mileage;
+    cout << "Enter year of manufacturing: ";
+    cin >> c2.year_of_manufacturing;
+    cout << "Enter market price: ";
+    cin >> c2.market_price;
+    cout << endl;   
+    
+    cout << "Car Details:" << endl;
+    cout << "Name: " << c2.name << endl;
+    cout << "Model: " << c2.model << endl;
+    cout << "Color: " << c2.color << endl;
+    cout << "Mileage: " << c2.mileage << endl;
+    cout << "Year of Manufacturing: " << c2.year_of_manufacturing << endl;
+    cout << "Market Price: " << c2.market_price << endl;        
+
+    Car c3;
+    cout << "Enter car name: ";
+    cin >> c3.name;
+    cout << "Model :";
+    cin >> c3.model;
+    cout << "Enter car color: "; 
+    cin >> c3.color;
+    cout << "Enter car mileage: ";
+    cin >> c3.mileage;
+    cout << "Enter year of manufacturing: ";
+    cin >> c3.year_of_manufacturing;
+    cout << "Enter market price: ";
+    cin >> c3.market_price;
+    cout << endl;   
+    
+    cout << "Car Details:" << endl;
+    cout << "Name: " << c3.name << endl;
+    cout << "Model: " << c3.model << endl;
+    cout << "Color: " << c3.color << endl;
+    cout << "Mileage: " << c3.mileage << endl;
+    cout << "Year of Manufacturing: " << c3.year_of_manufacturing << endl;
+    cout << "Market Price: " << c3.market_price << endl;  
+
+    cout << endl;
+    cout << "Comparison of Cars:" << endl;
+    if (c1.market_price > c2.market_price) {
+        cout << c1.name << " is more expensive than " << c2.name << endl;
+    } else if (c1.market_price < c2.market_price) {
+        cout << c2.name << " is more expensive than " << c1.name << endl;
+    } else {
+        cout << c1.name << " and " << c2.name << " have the same market price." << endl;
+    }       
+
+    if (c1.year_of_manufacturing > c2.year_of_manufacturing) {
+        cout << c1.name << " is newer than " << c2.name << endl;
+    } else if (c1.year_of_manufacturing < c2.year_of_manufacturing) {
+        cout << c2.name << " is newer than " << c1.name << endl;
+    } else {
+        cout << c1.name << " and " << c2.name << " were manufactured in the same year." << endl;
+    }
+
+    if (c1.mileage > c2.mileage) {
+        cout << c1.name << " has better mileage than " << c2.name << endl;
+    } else if (c1.mileage < c2.mileage) {
+        cout << c2.name << " has better mileage than " << c1.name << endl;
+    } else {
+        cout << c1.name << " and " << c2.name << " have the same mileage." << endl;
+    }
+
+    return 0;
+}
+
+
+
+EXPECTED OUTPUT:
+
+
+Enter car name: BMW
+Model :X5
+Enter car color: Black
+Enter car mileage: 12
+Enter year of manufacturing: 2022
+Enter market price: 7500000
+
+Car Details:
+Name: BMW
+Model: X5
+Color: Black
+Mileage: 12
+Year of Manufacturing: 2022
+Market Price: 7500000
+
+Enter car name: Tesla
+Model :ModelS
+Enter car color: White
+Enter car mileage: 20
+Enter year of manufacturing: 2023
+Enter market price: 8000000
+
+Car Details:
+Name: Tesla
+Model: ModelS
+Color: White
+Mileage: 20
+Year of Manufacturing: 2023
+Market Price: 8000000
+
+Enter car name: Audi
+Model :A6
+Enter car color: Blue
+Enter car mileage: 15
+Enter year of manufacturing: 2021
+Enter market price: 6500000
+
+Car Details:
+Name: Audi
+Model: A6
+Color: Blue
+Mileage: 15
+Year of Manufacturing: 2021
+Market Price: 6500000
+
+Comparison of Cars:
+Tesla is more expensive than BMW
+Tesla is newer than BMW
+Tesla has better mileage than BMW
