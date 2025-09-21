@@ -1,0 +1,51 @@
+#include <iostream>
+using namespace std;
+
+class cube {
+public:
+    int length;
+    int breath;
+    int height;
+
+    double volume() {
+        return length * breath * height;
+    }
+};
+
+int main() {
+    cube c1;
+
+
+    cout << "Enter length of cube: ";
+    cin >> c1.length;
+    cout << "Enter breath of cube: ";
+    cin >> c1.breath;
+    cout << "Enter height of cube: ";
+    cin >> c1.height;
+    cout << endl;
+   
+    double double_length = c1.length;
+    double double_breath = c1.breath;
+    double double_height = c1.height;
+    double double_vol = c1.volume();
+
+
+    cout << "Height of cube is: " << double_height << endl;
+    cout << "Breath of cube is: " << double_breath << endl;
+    cout << "Length of cube is: " << double_length << endl;
+    cout << endl;
+    cout << "Volume of cube is: " << double_vol << endl;
+
+    return 0;
+}
+
+OUTPUT :
+Enter length of cube: 20
+Enter breath of cube: 16
+Enter height of cube: 3
+
+Height of cube is: 3
+Breath of cube is: 16
+Length of cube is: 20
+
+Volume of cube is: 960
